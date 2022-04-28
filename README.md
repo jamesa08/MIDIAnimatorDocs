@@ -20,7 +20,7 @@ Useful commands:
 for building (in docs dir)
 make clean && make html
 
-(for opening built html and going back to docs dir)
+for opening built html and going back to docs dir
 cd build/html/ && open index.html && cd ../../
 
 -->
