@@ -5,7 +5,7 @@
 You can download an offline version [here.](https://midianimatordocs.readthedocs.io/_/downloads/en/latest/pdf/)
 
 Check out the {doc}`usage` section for further information, including
-how to {ref}`install` the project.
+how to {ref}`install` the project. See {ref}`getting_started` to get started.
 
 ```{admonition} Note
 <!-- :class: information -->
