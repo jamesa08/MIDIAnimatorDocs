@@ -31,6 +31,7 @@ node.addInstrument("bounce", "PianoTrack" "piano_keys")
 # Animate the MIDI file
 node.animate()
 ```
+
 <br>
 
 Next, run the program. You then should see animation data for the objects that you specified in the script.<br>
@@ -58,7 +59,16 @@ for instrument in data:
         # do something
 
 # TODO: somehow pass the "animated" data into the MIDINode?
-# how should the animated data be represented? 
+# how should the animated data be represented?
 
 note.animate()
 ```
+
+## Animation Types (subject to change)
+
+<br>
+Bounce animation. Pre-defined animation code that animates a "bounce". Parameters: Pass in a FCurve data object.<br>
+Hi-Hat animation. Pre-defined animation code that animates how a hi-hat moves.<br>
+Drumstick animation. Pre-defined animation code that animates how drumsticks move and feel. More complex<br>
+Custom animation. <br>
+<br>
