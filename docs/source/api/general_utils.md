@@ -7,7 +7,7 @@ from MIDIAnimator.utils import *
 
 
 ```{eval-rst}
-.. py:function:: noteToName(nVal: int):
+.. py:function:: noteToName(nVal: int) -> str:
 
     Takes a MIDI note number and returns the name
     
@@ -21,7 +21,7 @@ from MIDIAnimator.utils import *
 
     :raises AssertionError: if ``nVal`` is not an integer
 
-.. py:function:: nameToNote(nVal: str):
+.. py:function:: nameToNote(nVal: str)-> int:
 
     Takes a note name and returns the MIDI note number
     
@@ -36,7 +36,7 @@ from MIDIAnimator.utils import *
     :raises AssertionError: if ``nVal`` is not an integer
 
 
-.. py:function:: convertNoteNumber(inputStr: str):
+.. py:function:: convertNoteNumber(inputStr: str) -> list:
 
     Converts a note number string to a list.
     
@@ -50,7 +50,7 @@ from MIDIAnimator.utils import *
     
     :raises ValueError: if the input string is not a valid note number string
 
-.. py:function:: gmProgramToName(pcNum: int):
+.. py:function:: gmProgramToName(pcNum: int) -> str:
 
     Takes a GM program change number and returns the name
     
@@ -65,7 +65,7 @@ from MIDIAnimator.utils import *
     :raises AssertionError: if ``pcNum`` is not an integer
     :raises AssertionError: if ``pcNum`` is not in range of 0-127
 
-.. py:function:: removeDuplicates(vals: list):
+.. py:function:: removeDuplicates(vals: list) -> list:
     
     Removes duplicates from a list.
     
@@ -75,7 +75,7 @@ from MIDIAnimator.utils import *
     :return: the list with duplicates removed
     :rtype: list
     
-.. py:function:: rotateAroundCircle(radius, angle):
+.. py:function:: rotateAroundCircle(radius, angle) -> tuple:
     
     Returns a point on a circle given a radius and angle.
     
@@ -91,7 +91,7 @@ from MIDIAnimator.utils import *
     :rtype: tuple(x, y)
 
 
-.. py:function:: mapRange(value, inMin, inMax, outMin, outMax):
+.. py:function:: mapRange(value, inMin, inMax, outMin, outMax) -> float:
     
     Maps a value from one specified range to another.
     

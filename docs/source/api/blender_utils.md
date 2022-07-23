@@ -8,7 +8,7 @@ from MIDIAnimator.utils.blender import *
 ```
 
 ```{eval-rst}
-.. py:function:: shapeKeysFromObject(obj):
+.. py:function:: shapeKeysFromObject(obj: bpy.types.Object) -> Tuple:
 
     Gets shape keys  (:class:`bpy.types.ShapeKey`) from an object (:class:`bpy.types.Object`).
 
@@ -18,7 +18,7 @@ from MIDIAnimator.utils.blender import *
     :return: returns a tuple, first element being a list of the shape keys and second element being the reference key. If the object does not have any shape keys, it will return :class:`([], None)`.
     :rtype: `tuple`
 
-.. py:function:: FCurvesFromObject(obj):
+.. py:function:: FCurvesFromObject(obj: bpy.types.Object) -> List:
 
     Gets FCurves (:class:`bpy.types.FCurve`) from an object (:class:`bpy.types.Object`).
 
@@ -28,7 +28,7 @@ from MIDIAnimator.utils.blender import *
     :return: a list of :class:`bpy.types.FCurve` objects. If the object does not have FCurves, it will return an empty list.
     :rtype: `list`
 
-.. py:function:: shapeKeysFCurvesFromObject(obj):
+.. py:function:: shapeKeysFCurvesFromObject(obj: bpy.types.Object) -> List:
 
     Gets shape key (:class:`bpy.types.ShapeKey`) FCurves from a object (:class:`bpy.types.Object`).
 
@@ -38,7 +38,7 @@ from MIDIAnimator.utils.blender import *
     :return: a list of :class:`bpy.types.FCurve` objects. If the object does not have FCurves, it will return an empty list.
     :rtype: `list`
 
-.. py:function:: cleanKeyframes(obj, channels: Set={"all_channels"}):
+.. py:function:: cleanKeyframes(obj: bpy.types.Object, channels: Set={"all_channels"}) -> None:
 
     Removes all FCurves from an object (:class:`bpy.types.Object`) unless specified by ``channels``.
 
@@ -48,7 +48,7 @@ from MIDIAnimator.utils.blender import *
 
     :rtype: `None`
 
-.. py:function:: secToFrames(sec):
+.. py:function:: secToFrames(sec: float) -> float:
 
     Converts seconds to frames with the current context of the Blender scene (:class:`bpy.types.Scene`).
 
@@ -56,7 +56,7 @@ from MIDIAnimator.utils.blender import *
     :return: the number of frames
     :rtype: float
 
-.. py:function:: framesToSec(frames):
+.. py:function:: framesToSec(frames: float) -> float:
 
     Converts frames to seconds with the current context of the Blender scene (:class:`bpy.types.Scene`).
 
@@ -64,14 +64,14 @@ from MIDIAnimator.utils.blender import *
     :return: the number of seconds
     :rtype: float
 
-.. py:function:: getExactFps():
+.. py:function:: getExactFps() -> float:
 
     Gets the exact FPS (decimal) of the current Blender scene (:class:`bpy.types.Scene`).
 
     :return: the FPS
     :rtype: float
 
-.. py:function:: cleanCollection(col: bpy.types.Collection, refObject: bpy.types.Object=None):
+.. py:function:: cleanCollection(col: bpy.types.Collection, refObject: bpy.types.Object=None) -> None:
 
     Cleans/removes a collection of old objects (to be reanimated)
 
@@ -79,7 +79,7 @@ from MIDIAnimator.utils.blender import *
     :param refObject: the reference object that should not be deleted. If not specified, all objects will be deleted.
     :rtype: None
 
-.. py:function:: setKeyframeInterpolation(obj: bpy.types.Object, interpolation: str, data_path=None):
+.. py:function:: setKeyframeInterpolation(obj: bpy.types.Object, interpolation: str, data_path=None) -> None:
 
     Sets the interpolation of the last keyframe on an object (:class:`bpy.types.Object`).
 
@@ -91,7 +91,7 @@ from MIDIAnimator.utils.blender import *
     :param data_path: the data path to set the interpolation on. If not specified, the interpolation will be set on all FCurve channels.
     :rtype: None
 
-.. py:function:: setKeyframeHandleType(obj: bpy.types.Object, handleType, data_path=None):
+.. py:function:: setKeyframeHandleType(obj: bpy.types.Object, handleType, data_path=None) -> None:
 
     Sets the handle type of the last keyframe on an object (:class:`bpy.types.Object`).
 
@@ -103,63 +103,74 @@ from MIDIAnimator.utils.blender import *
     :param data_path: the data path to set the handle type on. If not specified, the handle type will be set on all FCurve channels.
     :rtype: None
 
-.. py:function:: deleteMarkers(name: str):
+.. py:function:: deleteMarkers(name: str) -> None:
 
     Deletes markers with the specified name in the current scene.
 
     :param name str: the name of the markers to delete
     :rtype: None
 
-.. py:function:: distanceFromVectors(point1: Vector, point2: Vector):
+.. py:function:: distanceFromVectors(point1: Vector, point2: Vector) -> float:
 
     Calculates the distance between two points.
 
     :param point1: the first point
     :type point1: :class:`mathutils.Vector`
+
     :param point2: the second point
     :type point2: :class:`mathutils.Vector`
+    
     :return: the distance (in Blender units, default is meters)
     :rtype: float
 
-.. py:function:: velocityFromVectors(point1: Vector, point2: Vector, frames: float):
+.. py:function:: velocityFromVectors(point1: Vector, point2: Vector, frames: float) -> float:
 
     Calculates the velocity from 2 vectors given a time (in frames).
 
     :param point1: the first point
     :type point1: :class:`mathutils.Vector`
+    
     :param point2: the second point
     :type point2: :class:`mathutils.Vector`
+    
     :param frames: the time in frames
     :type frames: float
+    
     :return: the velocity (in Blender units, default is meters/second)
     :rtype: float
 
-.. py:function:: timeFromVectors(point1: Vector, point2: Vector, velocity: float):
+.. py:function:: timeFromVectors(point1: Vector, point2: Vector, velocity: float) -> float:
 
     Calculates the time needed for a specified velocity from 2 vectors.
 
     :param point1: the first point
     :type point1: :class:`mathutils.Vector`
+
     :param point2: the second point
     :type point2: :class:`mathutils.Vector`
+
     :param velocity: the velocity (in Blender units, default is meters/second)
     :type velocity: float
+
     :return: the time (in seconds)
     :rtype: float
 
-.. py:function:: showHideObj(obj: bpy.types.Object, hide: bool, frame: int):
+.. py:function:: showHideObj(obj: bpy.types.Object, hide: bool, frame: int) -> None:
 
     Shows/hides an object (:class:`bpy.types.Object`) at a specified frame & writes a keyframe.
 
     :param obj: the object to show/hide
     :type obj: :class:`bpy.types.Object`
+    
     :param hide: if ``True``, the object will be hidden. If ``False``, the object will be shown.
     :type hide: bool
+    
     :param frame: the frame to show/hide the object at
     :type frame: int
+    
     :rtype: None
 
-.. py:function:: worldBoundingBox(obj: bpy.types.Object):
+.. py:function:: worldBoundingBox(obj: bpy.types.Object) -> list:
 
     Returns the corners of the bounding box of an object (:class:`bpy.types.Object`) in world coordinates.
     
