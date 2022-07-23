@@ -3,11 +3,11 @@
 # -- Project information
 
 project = 'MIDI Animator'
-copyright = '2022, iMac'
-author = 'iMac'
+copyright = '2022, James Alt'
+author = 'James Alt'
 
-release = 'alpha 0.1'
-version = 'alpha 0.1'
+release = 'release 1.0'
+version = 'release 1.0'
 
 # -- General configuration
 

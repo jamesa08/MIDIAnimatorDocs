@@ -9,7 +9,7 @@ To build:
 3. Run `cd docs && make clean && make html` in the repository directory.
 4. Open `index.html` or run `open build/html/index.html` (for Mac users).
 
-Note: Instead of reStructuredText markdown files, we are using MyST markdown files. For some basic information on MyST markdown, visit https://myst-parser.readthedocs.io/en/v0.15.1/sphinx/intro.html.
+Note: Instead of reStructuredText markdown files, this project uses MyST markdown files. For some basic information on MyST markdown, visit https://myst-parser.readthedocs.io/en/v0.15.1/sphinx/intro.html and https://jupyterbook.org/en/stable/reference/cheatsheet.html.
 
 **Please open a PR if you want to make changes to the docs.**
 

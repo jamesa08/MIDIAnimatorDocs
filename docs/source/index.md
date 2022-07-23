@@ -31,8 +31,7 @@ This project is under active development. These documents are subject to change,
 
 ## Getting Started:
 
-Check out the {doc}`usage` section for further information, including
-how to {ref}`installation` the project. See {ref}`getting_started` to get started.
+Check out how to {ref}`installation` the project. See {ref}`getting_started` to get started.
 
 ## Contributing
 
@@ -68,8 +67,22 @@ Here are some of the development tools I used to create this project.
 - [Fake Blender Python API Module (for code completion)](https://github.com/nutti/fake-bpy-module)
 - [Blender Python API Documentation](https://docs.blender.org/api/2.91/)
 
-## Table of Contents
+<!-- ## Table of Contents -->
 
 ```{toctree}
-usage
+:caption: Table of Contents
+general/installation.md
+general/getting_started.md
+general/animation_types.md
+tutorials/tutorial.md
+tutorials/adv_tutorial.md
+```
+
+```{toctree}
+:caption: API Reference
+:maxdepth: 1
+
+api/general_utils.md
+api/blender_utils.md
+
 ```
