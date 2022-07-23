@@ -84,6 +84,11 @@ tutorials/adv_tutorial.md
 :caption: API Reference
 :maxdepth: 1
 
+api/midi.md
+api/data_structures.md
+api/algorithms.md
+api/animation.md
+api/instrument.md
 api/general_utils.md
 api/blender_utils.md
 
