@@ -31,7 +31,7 @@ This project is under active development. These documents are subject to change,
 
 ## Getting Started:
 
-Check out how to {ref}`installation` the project. See {ref}`getting_started` to get started.
+Check out how to [install](general/installation.md) the project. See {ref}`getting_started` to get started.
 
 ## Contributing
 
@@ -71,6 +71,8 @@ Here are some of the development tools I used to create this project.
 
 ```{toctree}
 :caption: Table of Contents
+:maxdepth: 1
+
 general/installation.md
 general/getting_started.md
 general/animation_types.md
