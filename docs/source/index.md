@@ -78,6 +78,7 @@ general/getting_started.md
 general/animation_types.md
 tutorials/tutorial.md
 tutorials/adv_tutorial.md
+general/future_plans.md
 ```
 
 ```{toctree}
