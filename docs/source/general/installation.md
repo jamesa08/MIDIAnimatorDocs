@@ -24,6 +24,6 @@ Locate the `.zip` file & close the preferences pane.
 
 
 ## Next Steps
-Check out the [tutorials]()
-
-Check out the [getting started section]()
+- **Check out the [Getting Started](/general/getting_started.md) page.**
+- **Do the [simple tutorial](/tutorials/tutorial.md).** 
+- **Do the [advanced tutorial](/tutorials/adv_tutorial.md).**
