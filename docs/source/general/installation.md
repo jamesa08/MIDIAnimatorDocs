@@ -16,11 +16,14 @@ Next, go to Add-ons -> Install...
 
 ![inst2](https://raw.githubusercontent.com/jamesa08/MIDIAnimatorDocs/main/docs/images/inst_2.png)
 
-Locate the `.zip` file & close the preferences pane.
+Locate the `.zip` file.
+
+Make sure to enable the add-on by pressing the checkbox.
+![inst3](https://raw.githubusercontent.com/jamesa08/MIDIAnimatorDocs/main/docs/images/inst_3.png)
 
 *Volia!* You have now successfully installed MIDI Animator. You should see the "MIDIAnimator" tab now in the 3D viewport.
 
-![inst3](https://raw.githubusercontent.com/jamesa08/MIDIAnimatorDocs/main/docs/images/inst_3.png)
+![inst4](https://raw.githubusercontent.com/jamesa08/MIDIAnimatorDocs/main/docs/images/inst_4.png)
 
 
 ## Next Steps
