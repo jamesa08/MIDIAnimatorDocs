@@ -70,12 +70,12 @@ Call the `MIDIAnimatorNode.animate()` method to animate all instruments.
     	* Deletes all unnecessary information left over (clears all instance variables)
 
 ## Dealing with overlapping animation:
-In Figure A, we are given a simple damped oscillation function.
+In Figure A, we are given a simple dampened oscillation function.
 
 <div style="text-align: center;">
     <img alt="images/breakdown_figurea.png" src="https://raw.githubusercontent.com/jamesa08/MIDIAnimatorDocs/main/docs/images/breakdown_figurea.png">
 
-*Figure A, simple damped oscillation*
+*Figure A, simple dampened oscillation*
 </div>
 
 If we were to animate Figure A using a simple MIDI file (2 notes, with the notes overlapping), it would look something like Figure B.
