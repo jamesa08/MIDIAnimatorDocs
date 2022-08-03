@@ -75,6 +75,7 @@ Here are some of the development tools I used to create this project.
 
 general/installation.md
 general/getting_started.md
+general/breakdown.md
 general/animation_types.md
 tutorials/tutorial.md
 tutorials/adv_tutorial.md
