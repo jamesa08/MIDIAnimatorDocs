@@ -45,7 +45,7 @@ To get specific `MIDITrack` objects, use the `MIDIFile.findTrack()` method.
 To start adding instruments, instance a `MIDIAnimatorNode()` object
 
 * Use the `MIDIAnimatorNode.addInsturment()` method to add an instrument.
-    * Takes a `MIDITrack`, `bpy.types.Collection`. *
+    * Takes a `MIDITrack`, `bpy.types.Collection`.
 	* On instrument creation, `makeObjToFCurvesDict()` is called
 	    * Gets each Blender Object in a collection, gets their FCurves and creates `ObjectFCurves()` objects
 	* & `createNoteToBlenderObject()` is called
