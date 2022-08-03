@@ -72,26 +72,30 @@ Call the `MIDIAnimatorNode.animate()` method to animate all instruments.
 ## Dealing with overlapping animation:
 In Figure A, we are given a simple damped oscillation function.
 
-![images/breakdown_figurea.png](https://raw.githubusercontent.com/jamesa08/MIDIAnimatorDocs/main/docs/images/breakdown_figurea.png)
+<div style="text-align: center;">
+    <img alt="images/breakdown_figurea.png" src="https://raw.githubusercontent.com/jamesa08/MIDIAnimatorDocs/main/docs/images/breakdown_figurea.png">
 
 *Figure A, simple damped oscillation*
-
+</div>
 
 If we were to animate Figure A using a simple MIDI file (2 notes, with the notes overlapping), it would look something like Figure B.
 
 However, there is a fundamental problem, as there is overlapping animation (denoted by the question mark in Figure B).
 
-
-![images/breakdown_figureb.png](https://raw.githubusercontent.com/jamesa08/MIDIAnimatorDocs/main/docs/images/breakdown_figureb.png)
+<div style="text-align: center;">
+    <img alt="images/breakdown_figureb.png" src="https://raw.githubusercontent.com/jamesa08/MIDIAnimatorDocs/main/docs/images/breakdown_figureb.png">
 
 *Figure B, animation duplicated across timeline*
+</div>
 
 
 To deal with the overlapping animation, we can simply add the 2 animation curves together, shown in Figure C.
 
-![images/breakdown_figurec.png](https://raw.githubusercontent.com/jamesa08/MIDIAnimatorDocs/main/docs/images/breakdown_figurec.png)
+<div style="text-align: center;">
+    <img alt="images/breakdown_figurec.png" src="https://raw.githubusercontent.com/jamesa08/MIDIAnimatorDocs/main/docs/images/breakdown_figurec.png">
 
 *Figure C, resulting animation curve*
+</div>
 
 
 ### Problems with this approach:
