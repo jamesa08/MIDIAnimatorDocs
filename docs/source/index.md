@@ -67,6 +67,8 @@ Here are some of the development tools I used to create this project.
 - [Fake Blender Python API Module (for code completion)](https://github.com/nutti/fake-bpy-module)
 - [Blender Python API Documentation](https://docs.blender.org/api/2.91/)
 
+Thank you to David Reed, Professor of Computer Science at Capital Univeristy advising this project and assisting with algorithims and data structures.
+
 <!-- ## Table of Contents -->
 
 ```{toctree}
