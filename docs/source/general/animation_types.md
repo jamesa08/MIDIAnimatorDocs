@@ -1,6 +1,6 @@
 # Animation Types (subject to change)
 
-Evaluate animation. Takes F. Parameters: Pass in a FCurve data object.
+Evaluate animation. Takes an object with FCurves and duplicates it across the timeline. Parameters: Pass in a FCurve data object.
 
 Projectile animation. Pre-defined animation code that animates a projectile launching.
 
