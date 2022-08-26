@@ -6,14 +6,14 @@ To start writing your own MIDI Animation programs, first, open a Text Editior wi
 
 ```python
 import bpy
-from MIDIAnimator.src.animation import BlenderAnimation
+from MIDIAnimator.src.animation import MIDIAnimatorNode
 from MIDIAnimator.data_structures.midi import MIDIFile
 
 file = MIDIFile("/path/to/midi/file.mid")
 pianoTrack = file.findTrack("Steinway Grand Piano")
 
-animator = BlenderAnimation()
-animator.addInstrument(midiTrack=pianoTrack, objectCollection=bpy.data.collections['Cubes'], custom=CustomInstrument)
+animator = MIDIAnimatorNode()
+animator.addInstrument(instrumentType="evaluated", midiTrack=pianoTrack, objectCollection=bpy.data.collections['Cubes'])
 
 # Animate the MIDI file
 animator.animate()
@@ -31,7 +31,7 @@ Any objects that previously have animation data will be overwritten.
 
 ```python
 import bpy
-from MIDIAnimator.src.animation import BlenderAnimation
+from MIDIAnimator.src.animation import MIDIAnimatorNode
 from MIDIAnimator.src.instruments import Instrument
 from MIDIAnimator.data_structures.midi import MIDIFile
 
@@ -46,8 +46,8 @@ class CustomInstrument(Instrument):
 file = MIDIFile("/path/to/midi/file.mid")
 pianoTrack = file.findTrack("Steinway Grand Piano")
 
-animator = BlenderAnimation()
-animator.addInstrument(midiTrack=pianoTrack, objectCollection=bpy.data.collections['Cubes'], custom=CustomInstrument)
+animator = MIDIAnimatorNode()
+animator.addInstrument(instrumentType="custom", midiTrack=pianoTrack, objectCollection=bpy.data.collections['Cubes'], custom=CustomInstrument)
 
 # Animate the MIDI file
 animator.animate()
