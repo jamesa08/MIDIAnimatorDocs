@@ -15,7 +15,8 @@
 ```{admonition} Note
 <!-- :class: information -->
 
-This project is under active development. These documents are subject to change, and things may have unexpected results.
+This project is under active development. These documents are subject to change, and things may have unexpected results. 
+Documentation is unfinished and is always being updated.
 ```
 
 [![Contributors][contributors-shield]][contributors-url]
@@ -26,6 +27,16 @@ This project is under active development. These documents are subject to change,
 
 ## About the project:
 **MIDI Animator** aims to provide a cohesive, open-source solution to animating instruments using a MIDI file.
+
+```{admonition} Note
+<!-- :class: information -->
+
+Currently unsupported:
+- Sustaining notes
+- Using MIDI CC data & pitchwheel data
+- Bones (for rigs). Only object parent trees are supported
+
+```
 
 *You can download an offline version of the docs [here.](https://midianimatordocs.readthedocs.io/_/downloads/en/latest/pdf/)*
 

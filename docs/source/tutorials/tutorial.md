@@ -1,4 +1,4 @@
-# Simple Tutorial
+<!-- # Simple Tutorial
 This tutorial is also in video format.
 Click __here__ to watch it
 
@@ -9,4 +9,8 @@ __MIDIFile.mid__
 
 __scene.blend__
 
-## Step 2
+## Step 2 -->
+
+# Simple Tutorial
+
+The tutorials are not yet finished! Please check back in the coming weeks.

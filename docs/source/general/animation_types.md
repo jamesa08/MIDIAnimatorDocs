@@ -1,8 +1,8 @@
 # Animation Types (subject to change)
 
-Projectile animation. Pre-defined animation code that animates a projectile launching.
+Evaluate animation. Takes F. Parameters: Pass in a FCurve data object.
 
-String animation. Pre-defined animation code that animates a "bounce". Parameters: Pass in a FCurve data object.
+Projectile animation. Pre-defined animation code that animates a projectile launching.
 
 Hi-Hat animation. Pre-defined animation code that animates how a hi-hat moves.
 
