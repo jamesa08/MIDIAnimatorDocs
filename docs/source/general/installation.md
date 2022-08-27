@@ -7,8 +7,8 @@ You will need to install Blender (version 3.0 or better) to use MIDI Animator.
 ## Download
 Download the `.zip` file in the Releases pane, or click [here.](https://github.com/imacj/MIDIAnimator/releases)
 
-```{admonition} Note
-<!-- :class: information -->
+```{admonition} Warning
+:class: danger
 
 Do NOT unzip the file. If the zip file is unzipped, the add-on will install improperly.
 ```

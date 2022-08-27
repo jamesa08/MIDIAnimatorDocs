@@ -1,6 +1,6 @@
 # Animation Types
 
-```{admonition} Note
+```{note}
 This section is under development. Check back later.
 ```
 

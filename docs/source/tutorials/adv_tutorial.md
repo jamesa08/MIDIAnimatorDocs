@@ -14,6 +14,6 @@ __scene.blend__
 
 # Advanced Tutorial
 
-```{admonition} Note
+```{note}
 This section is under development. Check back later.
 ```

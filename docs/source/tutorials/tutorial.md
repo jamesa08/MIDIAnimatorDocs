@@ -13,6 +13,6 @@ __scene.blend__
 
 # Simple Tutorial
 
-```{admonition} Note
+```{note}
 This section is under development. Check back later.
 ```

@@ -5,9 +5,7 @@
 To start writing your own MIDI Animation programs, first, you will need a scene to work with. You must create objects and have motion in mind
 that you will want to animate. For example, if you have a set of cubes, you might want to animate their Z location. 
 
-```{admonition} Note
-:class: information
-
+```{note}
 It is reccomended that you keep your scene organized and tidy. Make good names for collections and objects.
 ```
 <hr>
@@ -65,20 +63,17 @@ Currently, there is only 1 type of object-level animation, which is called "Keyf
 
 *In future updates, there will be more object-level types, and they will be explained.*
 
-```{admonition} Note
-:class: information
-
+```{note}
 Keep in mind different instrument-level animation types (such as Projectile motion) will not support other object-level animation types (such as oscillation or ADSR, which is currently planned.). 
 
 This document **only** outlines the instrument-level animation type "Evaluate". See [Animation Types](animation_types.md) for more details on other instrument-level animation types.
 ```
 
 
-```{admonition} Note
-:class: information
-
+```{note}
 Only location, Rotation (Euler), custom properties (floats and ints only) and shape key FCurves are supported currently.
 ```
+
 To use location and rotation:
    - Keyframe your reference object just like you would any normal animation.
    - Select your target object, and in the Note On/Off object field, assign it to the reference object. 
@@ -102,14 +97,11 @@ To use shape keys for animation:
    - Thats it! If the shape keys do not exist on the target objects, it will simply be ignored. If it finds a matching shape key name, it will be animated.  
 
 ```{admonition} Important
-:class: warning
-
+:class: danger
 ALL animation must be relativie to 0. The first keyframe must start at 0, and the last keyframe must return to 0. If this is not followed, resulting animation will have side-effects.
 ```
 
-```{admonition} Note
-:class: information
-
+```{note}
 Only "Note On" is supported currently, which means you cannot create "sustaining" notes (but you can fake it for now!).
 ```
 
@@ -124,9 +116,7 @@ There are differnet ways to deal with overlapping animation. Currently, the only
 
 ## Step 3: Writing the Code
 
-```{admonition} Note
-:class: information
-
+```{note}
 Currently there is no UI, and it may be some time before a UI is implemented, as there are several design challenges. 
 ```
 
@@ -181,9 +171,7 @@ Typical Mac directories: `file = MIDIFile("/Users/path/to/file.mid")`<br>
 Typical Linux directories (varies by distro): `file = MIDIFile('/home/username/path/to/file.mid")`
 
 
-```{admonition} Tip
-:class: information
-
+```{tip}
 Blender relative paths work! Just type `//` infront of the filename, and Blender will attempt to find the MIDI file in the same directory as the `.blend` file. Make sure to save your work first!
 ```
 
@@ -193,14 +181,19 @@ The most commonly used one by far is `findTrack()`, in which it takes the name o
 `pianoTrack = file.findTrack("Steinway Grand Piano")`
 
 
-```{admonition} Tip
+````{tip}
 Unsure of what tracks you have in your MIDI file? Print them to the [Console Window](https://docs.blender.org/manual/en/2.79/advanced/command_line/introduction.html) with this short code snippet:
+    
 ```python
 file = MIDIFile("/path/to/midi/file.mid")
 print(file.listTrackNames())
 ```
 
+````
+
+
 <hr>
+
 4. Next, we need to setup a `MIDIAnimatorNode`. This will be the interface to tell MIDIAnimator what instruments to animate.
 
 
@@ -211,7 +204,7 @@ The first step in this process is to create a MIDIAnimatorNode() object and assi
 5. Next, we will add all of the instruments we want to animate. In the case of the Cubes collection, we will add it using the `addInstrument()` method:<br>
 `animator.addInstrument(instrumentType="evaluated", midiTrack=pianoTrack, objectCollection=bpy.data.collections['Cubes'])`
 
-```{admonition} Note
+```{note} 
 See [Animation Types](animation_types.md) for more details on other instrument-level animation types.
 ```
 
@@ -222,13 +215,11 @@ See [Animation Types](animation_types.md) for more details on other instrument-l
 ## Step 4: Running the Program
 If all went well, you should see things moving to the notes of the MIDI file!
 
-```{admonition} Warning
-:class: warning
-
+```{warning}
 All objects in the collection passed in (for example, the "Cubes" collection) that have animation data will be cleared and overwitten.
 ```
 
-```{admonition} Note
+```{note}
 If you get stuck or run into issues, feel free to open an issue on the GitHub, or join the [Animusic Discord](https://discord.gg/yDfyhfA) and post in the #midianimator-discussion channel.
 ```
 
@@ -238,7 +229,7 @@ If you get stuck or run into issues, feel free to open an issue on the GitHub, o
 
 ## Writing Custom Animation Functions
 
-```{admonition} Note
+```{note}
 This section is under development. Check back later.
 ```
 
