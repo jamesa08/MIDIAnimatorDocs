@@ -1,4 +1,8 @@
-# Animation Types (subject to change)
+# Animation Types
+
+```{admonition} Note
+This section is under development. Check back later.
+```
 
 Evaluate animation. Takes an object with FCurves and duplicates it across the timeline. Parameters: Pass in a FCurve data object.
 

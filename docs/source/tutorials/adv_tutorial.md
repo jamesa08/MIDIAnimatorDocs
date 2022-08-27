@@ -14,4 +14,6 @@ __scene.blend__
 
 # Advanced Tutorial
 
-The tutorials are not yet finished! Please check back in the coming weeks.
+```{admonition} Note
+This section is under development. Check back later.
+```
