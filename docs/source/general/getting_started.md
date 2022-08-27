@@ -10,6 +10,8 @@ that you will want to animate. For example, if you have a set of cubes, you migh
 
 It is reccomended that you keep your scene organized and tidy. Make good names for collections and objects.
 ```
+<hr>
+
 ## Step 1: Assign Note Numbers to Objects
 
 Currently, only 1 note number per object is supported, however more than one object can have the same note number in a collection.
@@ -41,8 +43,7 @@ When you hit `Run`, you will see a preview on how the note numbers will be assig
 
 <hr>
 
-This entire panel can be controlled via code for batch assignment.
-
+This entire panel can be controlled via code for batch assignment.<br>
 Sample script:
 ```python
 import bpy
@@ -52,6 +53,8 @@ scene.midi.quick_note_number_list = "[60, 61, 62, 63, 64]"
 scene.midi.quick_obj_col = bpy.data.collections['Cubes']
 bpy.ops.scene.quick_add_props()
 ```
+
+<hr>
 
 ## Step 2: Assigning Object-Level Animations to Objects
 To assign animations to objects, right click the object you want to assign an animation to, and look in the N-key panel in the 3D viewport.
@@ -116,6 +119,8 @@ Note anchor points tell you when to trigger the animation based on the note on t
 *Note anchor points are located next to the Note On/Off object field.*
 
 There are differnet ways to deal with overlapping animation. Currently, the only way researched is to "add" the motion together. This works great for oscillating motion, but for other types of motion, it may give undesirable results. More overlapping methods will be added as they are discovered and researched.
+
+<hr>
 
 ## Step 3: Writing the Code
 
@@ -211,6 +216,8 @@ See [Animation Types](animation_types.md) for more details on other instrument-l
 ```
 
 6. Finally, we call the `animate()` method, which animates all instruments that were added to the `MIDIAnimatorNode` object.
+
+<hr>
 
 ## Step 4: Running the Program
 If all went well, you should see things moving to the notes of the MIDI file!
