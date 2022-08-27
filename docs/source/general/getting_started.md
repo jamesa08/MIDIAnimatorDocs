@@ -21,6 +21,8 @@ Take for example this cube. It is assigned note number 58.
 
 ### Batch Assigning Note Numbers
 
+Instead of assigning note numbers 1 by 1, you can also assign them in a batch script.
+
 In the N-key panel, under `Assign Notes to Objects`, you input note numbers into a list and pick the collection where the objects are.
 
 To know which note number gets each object, you can use the naming syntax `{objectName}_{noteNumber}`:
