@@ -32,7 +32,7 @@ To know which note number gets each object, you can use the naming syntax `{obje
 
 
 Here is an example of a properly-named collection of objects ready to be assigned note numbers.
-![cube_sorting_syntax](https://raw.githubusercontent.com/jamesa08/MIDIAnimatorDocs/main/docs/images/cube_note_example.png)
+![cube_sorting_syntax](https://raw.githubusercontent.com/jamesa08/MIDIAnimatorDocs/main/docs/images/cube_sorting_syntax.png)
 
 Alternatively, you can have the objects sorted by their current names and have the objects be sequentially assigned by checking `Sort By Name`.
 
