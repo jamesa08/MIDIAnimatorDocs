@@ -204,7 +204,7 @@ The first step in this process is to create a MIDIAnimatorNode() object and assi
 
 
 5. Next, we will add all of the instruments we want to animate. In the case of the Cubes collection, we will add it using the `addInstrument()` method:<br>
-`animator.addInstrument(instrumentType="evaluated", midiTrack=pianoTrack, objectCollection=bpy.data.collections['Cubes'])`
+`animator.addInstrument(instrumentType="evaluate", midiTrack=pianoTrack, objectCollection=bpy.data.collections['Cubes'])`
 
 ```{note} 
 See [Animation Types](animation_types.md) for more details on other instrument-level animation types.
