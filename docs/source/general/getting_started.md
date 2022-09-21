@@ -135,7 +135,7 @@ file = MIDIFile("/path/to/midi/file.mid")
 pianoTrack = file.findTrack("Steinway Grand Piano")
 
 animator = MIDIAnimatorNode()
-animator.addInstrument(instrumentType="evaluated", midiTrack=pianoTrack, objectCollection=bpy.data.collections['Cubes'])
+animator.addInstrument(instrumentType="evaluate", midiTrack=pianoTrack, objectCollection=bpy.data.collections['Cubes'])
 
 # Animate the MIDI file
 animator.animate()
