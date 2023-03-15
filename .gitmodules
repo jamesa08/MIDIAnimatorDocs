@@ -1,0 +1,3 @@
+[submodule "MIDIAnimator"]
+	path = MIDIAnimator
+	url = https://github.com/jamesa08/MIDIAnimator

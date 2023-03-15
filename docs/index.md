@@ -97,13 +97,8 @@ general/future_plans.md
 ```{toctree}
 :caption: API Reference
 :maxdepth: 1
+:glob:
 
-api/midi.md
-api/data_structures.md
-api/algorithms.md
-api/animation.md
-api/instrument.md
-api/general_utils.md
-api/blender_utils.md
+api/*
 
 ```

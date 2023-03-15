@@ -4,10 +4,11 @@ Read the docs here: https://midianimatordocs.readthedocs.io/
 
 To build:
 
-1. Clone the repository `git clone https://github.com/imacj/MIDIAnimatorDocs.git`.
+1. Clone the repository `git clone https://github.com/imacj/MIDIAnimatorDocs.git` and `cd MIDIAnimatorDocs`.
 2. Run `pip install -r docs/requirements.txt`.
-3. Run `cd docs && make clean && make html` in the repository directory.
-4. Open `index.html` or run `open build/html/index.html` (for Mac users).
+3. Run `cd docs`.
+4. Run `make clean && make html` in the repository directory.
+5. Open `index.html` or run `open build/html/index.html` (for Mac users).
 
 Note: Instead of reStructuredText markdown files, this project uses MyST markdown files. For some basic information on MyST markdown, visit https://myst-parser.readthedocs.io/en/v0.15.1/sphinx/intro.html and https://jupyterbook.org/en/stable/reference/cheatsheet.html.
 
